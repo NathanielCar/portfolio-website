@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark" />
+    <base href="/portfolio-website/" />
+    <script>
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        document.querySelector('base').href = '/';
+      }
+    </script>
 
     <title>Gabriel Dörner | 3D Modeller and Animator</title>
     <meta
