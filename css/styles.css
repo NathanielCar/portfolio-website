@@ -549,7 +549,7 @@ body.js-enhanced .timeline li.timeline-visible {
 .contact-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
-  align-items: start;
+  align-items: stretch;
   gap: 1rem;
   margin-top: 0.35rem;
 }
