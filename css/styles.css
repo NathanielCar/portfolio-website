@@ -77,8 +77,11 @@ body {
   height: 100%;
   z-index: 0;
   object-fit: cover;
-  filter: brightness(0.62) blur(2px);
   pointer-events: none;
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  contain: strict;
 }
 
 .bg-shade {
@@ -89,19 +92,15 @@ body {
   background:
     linear-gradient(
       180deg,
-      rgba(0, 0, 0, 0.9) 0%,
-      rgba(36, 72, 85, 0.74) 26%,
-      rgba(36, 72, 85, 0.68) 60%,
-      rgba(0, 0, 0, 0.93) 100%
+      rgba(0, 0, 0, 0.42) 0%,
+      rgba(36, 72, 85, 0.34) 26%,
+      rgba(36, 72, 85, 0.28) 60%,
+      rgba(0, 0, 0, 0.48) 100%
     ),
-    radial-gradient(
-      circle at 82% 78%,
-      rgba(230, 72, 51, 0.15),
-      transparent 38%
-    ),
+    radial-gradient(circle at 82% 78%, rgba(230, 72, 51, 0.1), transparent 38%),
     radial-gradient(
       circle at 20% 35%,
-      rgba(144, 174, 173, 0.22),
+      rgba(144, 174, 173, 0.14),
       transparent 34%
     );
 }
